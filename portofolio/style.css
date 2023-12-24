@@ -1,0 +1,108 @@
+/* RESET CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* VARIABEL */
+:root {
+    --primary-color: #FB6A27;
+    --dark-color : #0F0F0F;
+    --gray-color : gray;
+
+    --h1-font: 40px;
+    --h2-font:32px;
+    --small-font:14px;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/* GLOBAL CSS */
+section{
+    padding: 70px 0;
+}
+section .section-title{
+    font-size: var(--h2-font);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.btn-orage{
+    background-color: var(--primary-color);
+    color: white;
+}
+.btn-orage:hover{
+    background-color: var(--dark-color);
+    color: #efefef;
+    transition: .5s all ease-in;
+}
+.text-orage {
+    color: var(--primary-color);
+}
+.text-dark{
+    color: var(--dark-color);
+}
+
+.fs-7{
+    font-size: var(--small-font);
+}
+.form-control:focus{
+    box-shadow: none ;
+    border-color: var(--primary-color);
+}
+/* CSS PER SECTION */
+/* navbar */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active{
+    color: var(--primary-color);
+}
+/* HEADER */
+.header-section .header-title{
+    font-size: var(--h1-font);
+}
+.header-section .header-skill{
+    color: var(--dark-color);
+}
+.header-section .header-skill:hover{
+    color: var(--primary-color);
+}
+.header-section .header-skill i{
+    transition: .5s;
+}
+.header-section .header-skill:hover i {
+    transform: rotate(-45deg);
+}
+.header-section .header-img{
+    width: 90%; 
+}
+
+/* portofolio */
+.portofolio-section .card{
+    width: 20%;
+    height: 200px;
+
+}
+
+/* skill */
+.skill-section, footer{
+    background-color: #030303;
+}
+
+.skill-section .progress-bar{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+.skill-section .progress-bar .progress{
+    background-color: var(--primary-color);
+}
+
+/* footer */
